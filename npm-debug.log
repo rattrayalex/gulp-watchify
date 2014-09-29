@@ -1,0 +1,420 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@2.1.1
+3 info using node@v0.10.31
+4 verbose node symlink /usr/local/bin/node
+5 warn package.json Dependency 'gulp-util' exists in both dependencies and devDependencies, using 'gulp-util@^3.0.1' from dependencies
+6 verbose readDependencies using package.json deps
+7 verbose install where, deps [ '/Users/alex/djcode/gulp-watchify',
+7 verbose install   [ 'deepmerge',
+7 verbose install     'gulp-util',
+7 verbose install     'through2',
+7 verbose install     'brfs',
+7 verbose install     'exec-sync',
+7 verbose install     'gulp',
+7 verbose install     'gulp-streamify',
+7 verbose install     'gulp-uglify',
+7 verbose install     'watchify' ] ]
+8 info preinstall gulp-watchify@0.2.0
+9 verbose readDependencies using package.json deps
+10 verbose already installed skipping gulp@^3.8.8 /Users/alex/djcode/gulp-watchify
+11 verbose already installed skipping gulp-streamify@0.0.5 /Users/alex/djcode/gulp-watchify
+12 verbose cache add [ 'gulp-uglify@^1.0.1', null ]
+13 verbose cache add spec="gulp-uglify@^1.0.1" args=["gulp-uglify@^1.0.1",null]
+14 verbose parsed spec { raw: 'gulp-uglify@^1.0.1',
+14 verbose parsed spec   scope: null,
+14 verbose parsed spec   name: 'gulp-uglify',
+14 verbose parsed spec   rawSpec: '^1.0.1',
+14 verbose parsed spec   spec: '>=1.0.1 <2.0.0',
+14 verbose parsed spec   type: 'range' }
+15 verbose cache add [ 'watchify@^1.0.6', null ]
+16 verbose cache add spec="watchify@^1.0.6" args=["watchify@^1.0.6",null]
+17 verbose parsed spec { raw: 'watchify@^1.0.6',
+17 verbose parsed spec   scope: null,
+17 verbose parsed spec   name: 'watchify',
+17 verbose parsed spec   rawSpec: '^1.0.6',
+17 verbose parsed spec   spec: '>=1.0.6 <2.0.0',
+17 verbose parsed spec   type: 'range' }
+18 verbose cache add [ 'deepmerge@^0.3.1', null ]
+19 verbose cache add spec="deepmerge@^0.3.1" args=["deepmerge@^0.3.1",null]
+20 verbose parsed spec { raw: 'deepmerge@^0.3.1',
+20 verbose parsed spec   scope: null,
+20 verbose parsed spec   name: 'deepmerge',
+20 verbose parsed spec   rawSpec: '^0.3.1',
+20 verbose parsed spec   spec: '>=0.3.1 <0.4.0',
+20 verbose parsed spec   type: 'range' }
+21 verbose cache add [ 'gulp-util@^3.0.1', null ]
+22 verbose cache add spec="gulp-util@^3.0.1" args=["gulp-util@^3.0.1",null]
+23 verbose parsed spec { raw: 'gulp-util@^3.0.1',
+23 verbose parsed spec   scope: null,
+23 verbose parsed spec   name: 'gulp-util',
+23 verbose parsed spec   rawSpec: '^3.0.1',
+23 verbose parsed spec   spec: '>=3.0.1 <4.0.0',
+23 verbose parsed spec   type: 'range' }
+24 verbose parsed spec { raw: 'gulp-uglify@^1.0.1',
+24 verbose parsed spec   scope: null,
+24 verbose parsed spec   name: 'gulp-uglify',
+24 verbose parsed spec   rawSpec: '^1.0.1',
+24 verbose parsed spec   spec: '>=1.0.1 <2.0.0',
+24 verbose parsed spec   type: 'range' }
+25 verbose addNamed [ 'gulp-uglify', '>=1.0.1 <2.0.0' ]
+26 verbose addNamed [ null, '>=1.0.1 <2.0.0' ]
+27 silly addNameRange { name: 'gulp-uglify', range: '>=1.0.1 <2.0.0', hasData: false }
+28 verbose mapToRegistry name gulp-uglify
+29 verbose mapToRegistry uri https://registry.npmjs.org/gulp-uglify
+30 verbose parsed spec { raw: 'watchify@^1.0.6',
+30 verbose parsed spec   scope: null,
+30 verbose parsed spec   name: 'watchify',
+30 verbose parsed spec   rawSpec: '^1.0.6',
+30 verbose parsed spec   spec: '>=1.0.6 <2.0.0',
+30 verbose parsed spec   type: 'range' }
+31 verbose addNamed [ 'watchify', '>=1.0.6 <2.0.0' ]
+32 verbose addNamed [ null, '>=1.0.6 <2.0.0' ]
+33 silly addNameRange { name: 'watchify', range: '>=1.0.6 <2.0.0', hasData: false }
+34 verbose mapToRegistry name watchify
+35 verbose mapToRegistry uri https://registry.npmjs.org/watchify
+36 verbose parsed spec { raw: 'deepmerge@^0.3.1',
+36 verbose parsed spec   scope: null,
+36 verbose parsed spec   name: 'deepmerge',
+36 verbose parsed spec   rawSpec: '^0.3.1',
+36 verbose parsed spec   spec: '>=0.3.1 <0.4.0',
+36 verbose parsed spec   type: 'range' }
+37 verbose addNamed [ 'deepmerge', '>=0.3.1 <0.4.0' ]
+38 verbose addNamed [ null, '>=0.3.1 <0.4.0' ]
+39 silly addNameRange { name: 'deepmerge', range: '>=0.3.1 <0.4.0', hasData: false }
+40 verbose mapToRegistry name deepmerge
+41 verbose mapToRegistry uri https://registry.npmjs.org/deepmerge
+42 verbose cache add [ 'through2@^0.6.2', null ]
+43 verbose cache add spec="through2@^0.6.2" args=["through2@^0.6.2",null]
+44 verbose parsed spec { raw: 'through2@^0.6.2',
+44 verbose parsed spec   scope: null,
+44 verbose parsed spec   name: 'through2',
+44 verbose parsed spec   rawSpec: '^0.6.2',
+44 verbose parsed spec   spec: '>=0.6.2 <0.7.0',
+44 verbose parsed spec   type: 'range' }
+45 verbose already installed skipping brfs@^1.2.0 /Users/alex/djcode/gulp-watchify
+46 verbose already installed skipping exec-sync@^0.1.6 /Users/alex/djcode/gulp-watchify
+47 verbose parsed spec { raw: 'gulp-util@^3.0.1',
+47 verbose parsed spec   scope: null,
+47 verbose parsed spec   name: 'gulp-util',
+47 verbose parsed spec   rawSpec: '^3.0.1',
+47 verbose parsed spec   spec: '>=3.0.1 <4.0.0',
+47 verbose parsed spec   type: 'range' }
+48 verbose addNamed [ 'gulp-util', '>=3.0.1 <4.0.0' ]
+49 verbose addNamed [ null, '>=3.0.1 <4.0.0' ]
+50 silly addNameRange { name: 'gulp-util', range: '>=3.0.1 <4.0.0', hasData: false }
+51 verbose mapToRegistry name gulp-util
+52 verbose mapToRegistry uri https://registry.npmjs.org/gulp-util
+53 verbose parsed spec { raw: 'through2@^0.6.2',
+53 verbose parsed spec   scope: null,
+53 verbose parsed spec   name: 'through2',
+53 verbose parsed spec   rawSpec: '^0.6.2',
+53 verbose parsed spec   spec: '>=0.6.2 <0.7.0',
+53 verbose parsed spec   type: 'range' }
+54 verbose addNamed [ 'through2', '>=0.6.2 <0.7.0' ]
+55 verbose addNamed [ null, '>=0.6.2 <0.7.0' ]
+56 silly addNameRange { name: 'through2', range: '>=0.6.2 <0.7.0', hasData: false }
+57 verbose mapToRegistry name through2
+58 verbose mapToRegistry uri https://registry.npmjs.org/through2
+59 verbose request on initialization, where is /deepmerge
+60 verbose request after pass 1, where is /deepmerge
+61 verbose request url raw /deepmerge
+62 verbose request resolving registry [ 'https://registry.npmjs.org/', './deepmerge' ]
+63 verbose request after pass 2, where is https://registry.npmjs.org/deepmerge
+64 verbose request no auth needed
+65 info attempt registry request try #1 at 11:35:19
+66 verbose request id 1cec8f23ebeb3a60
+67 verbose etag "7CCCH9KES592JK7QIO7QODE8J"
+68 http request GET https://registry.npmjs.org/deepmerge
+69 verbose request on initialization, where is /gulp-uglify
+70 verbose request after pass 1, where is /gulp-uglify
+71 verbose request url raw /gulp-uglify
+72 verbose request resolving registry [ 'https://registry.npmjs.org/', './gulp-uglify' ]
+73 verbose request after pass 2, where is https://registry.npmjs.org/gulp-uglify
+74 verbose request no auth needed
+75 info attempt registry request try #1 at 11:35:19
+76 verbose etag "E4417EQZR9WM2AXNX775G38ZR"
+77 http request GET https://registry.npmjs.org/gulp-uglify
+78 verbose request on initialization, where is /gulp-util
+79 verbose request after pass 1, where is /gulp-util
+80 verbose request url raw /gulp-util
+81 verbose request resolving registry [ 'https://registry.npmjs.org/', './gulp-util' ]
+82 verbose request after pass 2, where is https://registry.npmjs.org/gulp-util
+83 verbose request no auth needed
+84 info attempt registry request try #1 at 11:35:19
+85 verbose etag "E18OCAUY4EQZM38IANYCVCHP8"
+86 http request GET https://registry.npmjs.org/gulp-util
+87 verbose request on initialization, where is /watchify
+88 verbose request after pass 1, where is /watchify
+89 verbose request url raw /watchify
+90 verbose request resolving registry [ 'https://registry.npmjs.org/', './watchify' ]
+91 verbose request after pass 2, where is https://registry.npmjs.org/watchify
+92 verbose request no auth needed
+93 info attempt registry request try #1 at 11:35:19
+94 verbose etag "7EXHRLODQ5HNSHH0JFAQAJ2VL"
+95 http request GET https://registry.npmjs.org/watchify
+96 verbose request on initialization, where is /through2
+97 verbose request after pass 1, where is /through2
+98 verbose request url raw /through2
+99 verbose request resolving registry [ 'https://registry.npmjs.org/', './through2' ]
+100 verbose request after pass 2, where is https://registry.npmjs.org/through2
+101 verbose request no auth needed
+102 info attempt registry request try #1 at 11:35:19
+103 verbose etag "5Q0X4PRSXB2I0OVVZV1HRNPJ0"
+104 http request GET https://registry.npmjs.org/through2
+105 http 304 https://registry.npmjs.org/through2
+106 silly registry.get cb [ 304,
+106 silly registry.get   { date: 'Mon, 29 Sep 2014 03:35:21 GMT',
+106 silly registry.get     server: 'Apache',
+106 silly registry.get     via: '1.1 varnish',
+106 silly registry.get     'last-modified': 'Mon, 29 Sep 2014 03:35:12 GMT',
+106 silly registry.get     'cache-control': 'max-age=60',
+106 silly registry.get     etag: '"5Q0X4PRSXB2I0OVVZV1HRNPJ0"',
+106 silly registry.get     'x-served-by': 'cache-ty66-TYO',
+106 silly registry.get     'x-cache': 'HIT',
+106 silly registry.get     'x-cache-hits': '2',
+106 silly registry.get     'x-timer': 'S1411961721.083354,VS0,VE0',
+106 silly registry.get     vary: 'Accept',
+106 silly registry.get     'content-length': '0',
+106 silly registry.get     'keep-alive': 'timeout=10, max=50',
+106 silly registry.get     connection: 'Keep-Alive' } ]
+107 verbose etag https://registry.npmjs.org/through2 from cache
+108 silly addNameRange number 2 { name: 'through2', range: '>=0.6.2 <0.7.0', hasData: true }
+109 silly addNameRange versions [ 'through2',
+109 silly addNameRange   [ '0.0.0',
+109 silly addNameRange     '0.0.1',
+109 silly addNameRange     '0.0.2',
+109 silly addNameRange     '0.0.3',
+109 silly addNameRange     '0.0.4',
+109 silly addNameRange     '0.0.5',
+109 silly addNameRange     '0.1.0',
+109 silly addNameRange     '0.2.0',
+109 silly addNameRange     '0.2.1',
+109 silly addNameRange     '0.2.2',
+109 silly addNameRange     '0.2.3',
+109 silly addNameRange     '0.3.0',
+109 silly addNameRange     '0.4.0',
+109 silly addNameRange     '0.4.1',
+109 silly addNameRange     '1.0.0',
+109 silly addNameRange     '0.4.2',
+109 silly addNameRange     '0.5.0',
+109 silly addNameRange     '0.5.1',
+109 silly addNameRange     '0.6.0',
+109 silly addNameRange     '1.1.0',
+109 silly addNameRange     '0.6.1',
+109 silly addNameRange     '1.1.1',
+109 silly addNameRange     '0.6.2' ] ]
+110 verbose addNamed [ 'through2', '0.6.2' ]
+111 verbose addNamed [ '0.6.2', '0.6.2' ]
+112 http 304 https://registry.npmjs.org/watchify
+113 silly registry.get cb [ 304,
+113 silly registry.get   { date: 'Mon, 29 Sep 2014 03:35:21 GMT',
+113 silly registry.get     server: 'Apache',
+113 silly registry.get     via: '1.1 varnish',
+113 silly registry.get     'last-modified': 'Mon, 29 Sep 2014 03:35:21 GMT',
+113 silly registry.get     'cache-control': 'max-age=60',
+113 silly registry.get     etag: '"7EXHRLODQ5HNSHH0JFAQAJ2VL"',
+113 silly registry.get     'x-served-by': 'cache-ty68-TYO',
+113 silly registry.get     'x-cache': 'HIT',
+113 silly registry.get     'x-cache-hits': '1',
+113 silly registry.get     'x-timer': 'S1411961721.089301,VS0,VE116',
+113 silly registry.get     vary: 'Accept',
+113 silly registry.get     'content-length': '0',
+113 silly registry.get     'keep-alive': 'timeout=10, max=50',
+113 silly registry.get     connection: 'Keep-Alive' } ]
+114 verbose etag https://registry.npmjs.org/watchify from cache
+115 silly addNameRange number 2 { name: 'watchify', range: '>=1.0.6 <2.0.0', hasData: true }
+116 silly addNameRange versions [ 'watchify',
+116 silly addNameRange   [ '0.0.0',
+116 silly addNameRange     '0.0.1',
+116 silly addNameRange     '0.1.0',
+116 silly addNameRange     '0.2.0',
+116 silly addNameRange     '0.3.0',
+116 silly addNameRange     '0.4.0',
+116 silly addNameRange     '0.4.1',
+116 silly addNameRange     '0.5.0',
+116 silly addNameRange     '0.5.1',
+116 silly addNameRange     '0.5.2',
+116 silly addNameRange     '0.5.3',
+116 silly addNameRange     '0.5.4',
+116 silly addNameRange     '0.5.5',
+116 silly addNameRange     '0.5.6',
+116 silly addNameRange     '0.6.0',
+116 silly addNameRange     '0.6.1',
+116 silly addNameRange     '0.6.2',
+116 silly addNameRange     '0.6.3',
+116 silly addNameRange     '0.6.4',
+116 silly addNameRange     '0.7.0',
+116 silly addNameRange     '0.7.1',
+116 silly addNameRange     '0.7.2',
+116 silly addNameRange     '0.8.0',
+116 silly addNameRange     '0.8.1',
+116 silly addNameRange     '0.8.2',
+116 silly addNameRange     '0.8.3',
+116 silly addNameRange     '0.9.0',
+116 silly addNameRange     '0.10.0',
+116 silly addNameRange     '0.10.1',
+116 silly addNameRange     '0.10.2',
+116 silly addNameRange     '1.0.0',
+116 silly addNameRange     '1.0.1',
+116 silly addNameRange     '1.0.2',
+116 silly addNameRange     '1.0.3',
+116 silly addNameRange     '1.0.4',
+116 silly addNameRange     '1.0.5',
+116 silly addNameRange     '1.0.6' ] ]
+117 verbose addNamed [ 'watchify', '1.0.6' ]
+118 verbose addNamed [ '1.0.6', '1.0.6' ]
+119 http 304 https://registry.npmjs.org/gulp-uglify
+120 silly registry.get cb [ 304,
+120 silly registry.get   { date: 'Mon, 29 Sep 2014 03:35:21 GMT',
+120 silly registry.get     server: 'Apache',
+120 silly registry.get     via: '1.1 varnish',
+120 silly registry.get     'last-modified': 'Mon, 29 Sep 2014 03:35:21 GMT',
+120 silly registry.get     'cache-control': 'max-age=60',
+120 silly registry.get     etag: '"E4417EQZR9WM2AXNX775G38ZR"',
+120 silly registry.get     'x-served-by': 'cache-ty66-TYO',
+120 silly registry.get     'x-cache': 'HIT',
+120 silly registry.get     'x-cache-hits': '1',
+120 silly registry.get     'x-timer': 'S1411961721.084606,VS0,VE179',
+120 silly registry.get     vary: 'Accept',
+120 silly registry.get     'content-length': '0',
+120 silly registry.get     'keep-alive': 'timeout=10, max=50',
+120 silly registry.get     connection: 'Keep-Alive' } ]
+121 verbose etag https://registry.npmjs.org/gulp-uglify from cache
+122 http 304 https://registry.npmjs.org/deepmerge
+123 silly registry.get cb [ 304,
+123 silly registry.get   { date: 'Mon, 29 Sep 2014 03:35:21 GMT',
+123 silly registry.get     server: 'Apache',
+123 silly registry.get     via: '1.1 varnish',
+123 silly registry.get     'last-modified': 'Mon, 29 Sep 2014 03:35:21 GMT',
+123 silly registry.get     'cache-control': 'max-age=60',
+123 silly registry.get     etag: '"7CCCH9KES592JK7QIO7QODE8J"',
+123 silly registry.get     'x-served-by': 'cache-ty67-TYO',
+123 silly registry.get     'x-cache': 'HIT',
+123 silly registry.get     'x-cache-hits': '1',
+123 silly registry.get     'x-timer': 'S1411961721.088900,VS0,VE180',
+123 silly registry.get     vary: 'Accept',
+123 silly registry.get     'content-length': '0',
+123 silly registry.get     'keep-alive': 'timeout=10, max=50',
+123 silly registry.get     connection: 'Keep-Alive' } ]
+124 verbose etag https://registry.npmjs.org/deepmerge from cache
+125 silly addNameRange number 2 { name: 'gulp-uglify', range: '>=1.0.1 <2.0.0', hasData: true }
+126 silly addNameRange versions [ 'gulp-uglify',
+126 silly addNameRange   [ '0.0.1',
+126 silly addNameRange     '0.0.3',
+126 silly addNameRange     '0.0.4',
+126 silly addNameRange     '0.1.0',
+126 silly addNameRange     '0.2.0',
+126 silly addNameRange     '0.2.1',
+126 silly addNameRange     '0.3.0',
+126 silly addNameRange     '0.3.1',
+126 silly addNameRange     '0.3.2',
+126 silly addNameRange     '1.0.0-0',
+126 silly addNameRange     '1.0.0',
+126 silly addNameRange     '1.0.1' ] ]
+127 verbose addNamed [ 'gulp-uglify', '1.0.1' ]
+128 verbose addNamed [ '1.0.1', '1.0.1' ]
+129 verbose addRemoteTarball [ 'https://registry.npmjs.org/gulp-uglify/-/gulp-uglify-1.0.1.tgz',
+129 verbose addRemoteTarball   'd70a24ff85b179a7b16cee577023f19b9c4ba96f' ]
+130 silly addNameRange number 2 { name: 'deepmerge', range: '>=0.3.1 <0.4.0', hasData: true }
+131 silly addNameRange versions [ 'deepmerge',
+131 silly addNameRange   [ '0.0.1', '0.1.0', '0.2.1', '0.2.4', '0.2.5', '0.2.6', '0.2.7' ] ]
+132 info retry fetch attempt 1 at 11:35:20
+133 info attempt registry request try #1 at 11:35:20
+134 http fetch GET https://registry.npmjs.org/gulp-uglify/-/gulp-uglify-1.0.1.tgz
+135 http fetch 200 https://registry.npmjs.org/gulp-uglify/-/gulp-uglify-1.0.1.tgz
+136 silly fetchAndShaCheck shasum d70a24ff85b179a7b16cee577023f19b9c4ba96f
+137 verbose tar unpack /var/folders/p2/ms9lgycn06bf2xwc_qjcznj00000gn/T/npm-14812-PEXGzVUw/registry.npmjs.org/gulp-uglify/-/gulp-uglify-1.0.1.tgz
+138 verbose gentlyRm vacuuming /var/folders/p2/ms9lgycn06bf2xwc_qjcznj00000gn/T/npm-14812-PEXGzVUw/registry.npmjs.org/gulp-uglify/-/gulp-uglify-1.0.1.tgz-unpack
+139 silly gunzTarPerm modes [ '755', '644' ]
+140 silly gunzTarPerm extractEntry package.json
+141 silly gunzTarPerm extractEntry .npmignore
+142 silly gunzTarPerm extractEntry README.md
+143 silly gunzTarPerm extractEntry index.js
+144 silly gunzTarPerm extractEntry LICENSE.md
+145 silly gunzTarPerm extractEntry .jshintrc
+146 silly gunzTarPerm extractEntry .travis.yml
+147 silly gunzTarPerm extractEntry CHANGELOG.md
+148 silly gunzTarPerm extractEntry test/comments.js
+149 silly gunzTarPerm extractEntry test/err.js
+150 silly gunzTarPerm extractEntry test/minify.js
+151 silly gunzTarPerm extractEntry test/null.js
+152 silly gunzTarPerm extractEntry test/sourcemap.js
+153 silly gunzTarPerm extractEntry test/streams.js
+154 http 304 https://registry.npmjs.org/gulp-util
+155 silly registry.get cb [ 304,
+155 silly registry.get   { date: 'Mon, 29 Sep 2014 03:35:21 GMT',
+155 silly registry.get     server: 'Apache',
+155 silly registry.get     via: '1.1 varnish',
+155 silly registry.get     'last-modified': 'Mon, 29 Sep 2014 03:35:21 GMT',
+155 silly registry.get     'cache-control': 'max-age=60',
+155 silly registry.get     etag: '"E18OCAUY4EQZM38IANYCVCHP8"',
+155 silly registry.get     'x-served-by': 'cache-ty67-TYO',
+155 silly registry.get     'x-cache': 'HIT',
+155 silly registry.get     'x-cache-hits': '1',
+155 silly registry.get     'x-timer': 'S1411961721.067444,VS0,VE721',
+155 silly registry.get     vary: 'Accept',
+155 silly registry.get     'content-length': '0',
+155 silly registry.get     'keep-alive': 'timeout=10, max=50',
+155 silly registry.get     connection: 'Keep-Alive' } ]
+156 verbose etag https://registry.npmjs.org/gulp-util from cache
+157 silly addNameRange number 2 { name: 'gulp-util', range: '>=3.0.1 <4.0.0', hasData: true }
+158 silly addNameRange versions [ 'gulp-util',
+158 silly addNameRange   [ '0.0.1',
+158 silly addNameRange     '1.0.0',
+158 silly addNameRange     '1.1.0',
+158 silly addNameRange     '1.1.1',
+158 silly addNameRange     '1.2.0',
+158 silly addNameRange     '1.3.0',
+158 silly addNameRange     '2.0.0',
+158 silly addNameRange     '2.1.1',
+158 silly addNameRange     '2.1.2',
+158 silly addNameRange     '2.1.3',
+158 silly addNameRange     '2.1.4',
+158 silly addNameRange     '2.2.0',
+158 silly addNameRange     '2.2.1',
+158 silly addNameRange     '2.2.2',
+158 silly addNameRange     '2.2.3',
+158 silly addNameRange     '2.2.5',
+158 silly addNameRange     '2.2.6',
+158 silly addNameRange     '2.2.7',
+158 silly addNameRange     '2.2.8',
+158 silly addNameRange     '2.2.9',
+158 silly addNameRange     '2.2.10',
+158 silly addNameRange     '2.2.11',
+158 silly addNameRange     '2.2.12',
+158 silly addNameRange     '2.2.13',
+158 silly addNameRange     '2.2.14',
+158 silly addNameRange     '2.2.15',
+158 silly addNameRange     '2.2.16',
+158 silly addNameRange     '2.2.17',
+158 silly addNameRange     '2.2.18',
+158 silly addNameRange     '2.2.19',
+158 silly addNameRange     '2.2.20',
+158 silly addNameRange     '3.0.0',
+158 silly addNameRange     '3.0.1' ] ]
+159 verbose addNamed [ 'gulp-util', '3.0.1' ]
+160 verbose addNamed [ '3.0.1', '3.0.1' ]
+161 verbose stack Error: No compatible version found: deepmerge@'>=0.3.1 <0.4.0'
+161 verbose stack Valid install targets:
+161 verbose stack ["0.0.1","0.1.0","0.2.1","0.2.4","0.2.5","0.2.6","0.2.7"]
+161 verbose stack
+161 verbose stack     at installTargetsError (/usr/local/lib/node_modules/npm/lib/cache/add-named.js:255:12)
+161 verbose stack     at next (/usr/local/lib/node_modules/npm/lib/cache/add-named.js:234:17)
+161 verbose stack     at setData (/usr/local/lib/node_modules/npm/lib/cache/add-named.js:211:5)
+161 verbose stack     at saved (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/get.js:167:7)
+161 verbose stack     at Object.oncomplete (fs.js:107:15)
+162 verbose cwd /Users/alex/djcode/gulp-watchify
+163 error Darwin 13.4.0
+164 error argv "node" "/usr/local/bin/npm" "install"
+165 error node v0.10.31
+166 error npm  v2.1.1
+167 error code ETARGET
+168 error notarget No compatible version found: deepmerge@'>=0.3.1 <0.4.0'
+168 error notarget Valid install targets:
+168 error notarget ["0.0.1","0.1.0","0.2.1","0.2.4","0.2.5","0.2.6","0.2.7"]
+168 error notarget
+168 error notarget This is most likely not a problem with npm itself.
+168 error notarget In most cases you or one of your dependencies are requesting
+168 error notarget a package version that doesn't exist.
+169 verbose exit [ 1, true ]
