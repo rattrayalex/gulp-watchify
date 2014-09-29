@@ -2,26 +2,30 @@ var gutil = require('gulp-util')
 var merge = require('deepmerge')
 var through = require('through2')
 var watchify = require('watchify')
+var browserify = require('browserify')
 
 var cache = {}
+var b = null
 
 module.exports = function(taskCallback) {
 
-    function getBundle(file, opt) {
+
+    function getBundle(b, file, opt) {
         var path = file.path
         if (cache[path]) {
             return cache[path]
         }
         var bundle
+
         if (opt.watch !== false) {
-            bundle = watchify(opt)
+            bundle = watchify(b, opt)
             cache[path] = bundle
             bundle.on('update', function() {
                 bundle.updateStatus = 'updated'
                 taskCallback(plugin)
             })
         } else {
-            bundle = watchify.browserify(opt)
+            bundle = watchify(b, opt)
         }
         bundle.updateStatus = 'first'
         if (opt.setup) {
@@ -39,8 +43,12 @@ module.exports = function(taskCallback) {
             if (file.isStream()) {
                 return callback(new Error('gulp-watchify ignores streams'))
             }
-            var options = merge(opt, { entries:'./'+file.relative, basedir:file.base })
-            var bundle = getBundle(file, options)
+            var options = merge(opt,
+                { entries:'./'+file.relative, basedir:file.base },
+                watchify.args
+            )
+            var b = browserify(options)
+            var bundle = getBundle(b, file, options)
             if (bundle.updateStatus) {
                 gutil.log(
                     bundle.updateStatus === 'first' ? "Bundling" : "Rebundling",
