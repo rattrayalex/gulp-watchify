@@ -57,7 +57,8 @@ module.exports = function(taskCallback) {
                 )
                 file = file.clone()
                 delete bundle.updateStatus
-                file.contents = bundle.bundle(opt)
+                // file.contents = bundle.bundle(opt)
+                file.contents = bundle.bundle()
                 // Wait until done or else streamify(uglify()) fails due to buffering
                 file.contents.on('end', callback)
                 this.push(file)
